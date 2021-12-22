@@ -2,10 +2,10 @@ process SNIFFLES {
     tag "$meta.id"
     label 'process_high'
 
-    conda (params.enable_conda ? "bioconda::sniffles=1.0.12" : null)
+    conda (params.enable_conda ? "bioconda::sniffles=1.0.7" : null)
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
-        'https://depot.galaxyproject.org/singularity/sniffles:1.0.12--h8b12597_1' :
-        'quay.io/biocontainers/sniffles:1.0.12--h8b12597_1' }"
+        'https://depot.galaxyproject.org/singularity/sniffles:1.0.7--0' :
+        'quay.io/biocontainers/sniffles:1.0.7--0' }"
 
     input:
     tuple val(meta), path(sizes), val(is_transcripts), path(bam), path(bai)

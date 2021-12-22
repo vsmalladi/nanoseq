@@ -2,10 +2,10 @@ process MEDAKA_VARIANT {
     tag "$meta.id"
     label 'process_high'
 
-    conda (params.enable_conda ? "bioconda::medaka=1.4.4" : null)
+    conda (params.enable_conda ? "bioconda::medaka=1.0.3" : null)
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
-        'https://depot.galaxyproject.org/singularity/medaka:1.4.4--py38h130def0_0' :
-        'quay.io/biocontainers/medaka:1.4.4--py38h130def0_0' }"
+        'https://depot.galaxyproject.org/singularity/medaka:1.0.3--py36hbecb4b7_1' :
+        'quay.io/biocontainers/medaka:1.0.3--py36hbecb4b7_1' }"
 
     input:
     tuple val(meta), path(sizes), val(is_transcripts), path(bam), path(bai) //

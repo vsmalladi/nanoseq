@@ -28,8 +28,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 |-------------------------|-------------|-------------|
 | `bioconductor-bambu`    | 1.0.2       | 2.0.0       |
 | `bioconductor-bsgenome` | 1.58.0      | 1.62.0      |
-| `medaka`                |             | 1.4.4       |
-| `sniffles`              |             | 1.0.12      |
+| `medaka`                |             | 1.0.3       |
+| `sniffles`              |             | 1.0.7       |
 
 > **NB:** Dependency has been __updated__ if both old and new version information is present.
 > **NB:** Dependency has been __added__ if just the new version information is present.
